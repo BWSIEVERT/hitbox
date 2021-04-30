@@ -3,6 +3,7 @@ import './App.css';
 
 // Component Imports
 import Home from './Components/Home/Home'
+import TeamStats from './Components/TeamStats/TeamStats'
 
 // Router Imports
 import {
@@ -15,7 +16,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/' component={Home} />
+        <Route exact path='/' component={Home} />
+        <Route path='/League/Team/Statistics' component={TeamStats} />
       </Switch>
     </Router>
   );

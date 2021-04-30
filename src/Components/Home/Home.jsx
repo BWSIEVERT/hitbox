@@ -20,7 +20,13 @@ import {
   Title,
   TitleTwo,
   ImageInsertTwo,
-  TitleWrapperTwo
+  TitleWrapperTwo,
+  TitleThree,
+  TitleWrapperThree,
+  TitleFour,
+  TitleWrapperFour,
+  ImageInsertThree,
+  ImageInsertFour
 } from "./HomeStyles";
 
 const Home = () => {
@@ -30,18 +36,20 @@ const Home = () => {
         <ContainerOne>
           <TitleWrapper>
             <div>
-              <Title style={{ zIndex: "2" }}>Team Statistics</Title>
+              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+              <a style={{zIndex: '500', position: 'absolute', left: '0', top: '0', height: '100%', width: '100%'}} href="http://google.com"></a><Title style={{ zIndex: "2" }}>Team Statistics</Title>
             </div>
           </TitleWrapper>
           <ImageInsert
-            style={{ zIndex: "1", position: "relative" }}
+            style={{ zIndex: "1", position: "relative"}}
             alt="COD"
           />
         </ContainerOne>
         <ContainerTwo>
             <TitleWrapperTwo>
             <div>
-            <TitleTwo style={{ zIndex: "4" }}>Player Statistics</TitleTwo>
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+            <a style={{zIndex: '500', position: 'absolute', left: '0', top: '0', height: '100%', width: '100%'}} href="http://google.com"></a><TitleTwo style={{ zIndex: "4" }}>Player Statistics</TitleTwo>
           </div>
           <ImageInsertTwo
             style={{ zIndex: "3", position: "absolute" }}
@@ -52,20 +60,28 @@ const Home = () => {
       </Wrapper>
       <WrapperTwo>
         <ContainerThree>
-          <h1 style={{ position: "absolute", left: "51%" }}>Hello</h1>
-          <img
-            style={{ width: "100%", height: "100%" }}
-            src={ImageFour}
+        <TitleWrapperThree>
+            <div>
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+            <a style={{zIndex: '500', position: 'absolute', left: '0', top: '0', height: '100%', width: '100%'}} href="http://google.com"></a><TitleThree style={{ zIndex: "4" }}>Player Statistics</TitleThree>
+          </div>
+          <ImageInsertThree
+            style={{ zIndex: "3", position: "absolute" }}
             alt="COD"
           />
+            </TitleWrapperThree>
         </ContainerThree>
         <ContainerFour>
-          <h1 style={{ position: "absolute", left: "51%" }}>Hello</h1>
-          <img
-            style={{ width: "100%", height: "100%" }}
-            src={ImageTwo}
+        <TitleWrapperFour>
+            <div>
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+            <a style={{zIndex: '500', position: 'absolute', left: '0', top: '0', height: '100%', width: '100%'}} href="http://google.com"></a><TitleFour style={{ zIndex: "4" }}>Player Statistics</TitleFour>
+          </div>
+          <ImageInsertFour
+            style={{ zIndex: "3", position: "absolute" }}
             alt="COD"
           />
+            </TitleWrapperFour>
         </ContainerFour>
       </WrapperTwo>
     </PageControl>
